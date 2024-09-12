@@ -14,12 +14,60 @@ html,body{
     width: 100%;
     min-height: 100vh;
     /* color: aliceblue; */
+    background-image: url(https://as1.ftcdn.net/v2/jpg/01/21/06/48/1000_F_121064813_5CONOqmYSLyCLJlkRn3FsUl8733cg2qc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.topbar{
+    width: 100%;
+    min-height: 12vh;
+    /* background-color: rgb(182, 239, 239); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10vh;
+}
+
+.topbar .icon{
+    width: 7vh;
+    min-height: 9vh;
+    text-align: center;
+    font-size:7vh ;
+    padding: 2vh 3vh;
+}
+
+.search{
+    width: 70%;
+    min-height: 8vh;
+    display: flex;
+    
+}
+
+.search #input{
+    width: 93%;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.628);
+    border-color: transparent;
+}
+.search #input:hover{
+    border-color: rgb(7, 15, 16);
+}
+
+.search .mag{
+    width: 6%;
+    min-height: 8vh;
+    font-size: 6vh;
+    background-color: rgba(255, 255, 255, 0.629);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .top{
     width: 100%;
     min-height: 60vh;
-    background-image: url(https://images.jdmagicbox.com/quickquotes/listicle/listicle_1681802345379_2a6un_1040x500.jpg);
+    /* background-image: url(https://images.jdmagicbox.com/quickquotes/listicle/listicle_1681802345379_2a6un_1040x500.jpg); */
     background-size: cover;
     background-position: center;
 }       
@@ -37,18 +85,18 @@ html,body{
     align-items: center;
     position: absolute;
     width: 100%;
-    padding: 0 10vh;
+    padding: 0 8vh;
     color: white;
     bottom: 5%;
 }
 
 .text h1{
     font-weight: 600;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .text .image{
-    background-image: url(https://i0.wp.com/unciatrails.com/wp-content/uploads/2020/07/Taj2-1.jpg?resize=960%2C636&ssl=1);
+    background-image: url(https://cdn5.vectorstock.com/i/1000x1000/27/89/tour-and-travel-logo-icon-vector-26382789.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -68,16 +116,21 @@ html,body{
 
 .bottom{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     min-height: 40vh;
 }
 
 .b1{
-    width: 30%;
+    width: 27%;
     min-height:inherit ;
     background-image: url(https://i.natgeofe.com/n/22d43fba-6c4d-400d-b6fa-6a2300589c59/GettyImages-1446646686_3x4.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 3%;
+}
+.b1:hover{
+    width: 29%;
 }
 .b1 h1{
     text-align: center;
@@ -90,17 +143,24 @@ html,body{
 } 
 
 .b2{
-    width: 30%;
+    width: 27%;
     min-height: inherit;
+    
     display: flex;
     flex-direction: column;
+   
+}
+.b2:hover{
+    width: 29%;
 }
 .b2 .up{
     width: 100%;
     min-height: 20vh;
     background-image: url(https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/Cover1.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
 }
 .b2 .up h1{
     text-align: center;
@@ -117,6 +177,8 @@ html,body{
     background-image: url(https://www.textbooktravel.com/wp-content/uploads/2021/04/The-Great-Wall-of-China-Long-Distance-View.jpg);
     background-size: cover;
     background-position: center;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
 }
 .b2 .down .overlay{
     position: relative;
@@ -126,11 +188,15 @@ html,body{
 }
 
 .b3{
-    width: 40%;
+    width: 38%;
     min-height: inherit;
     background-image: url(https://img.freepik.com/premium-photo/reflection-magnifying-glass-keyboard_950347-18474.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 3%;
+}
+.b3:hover{
+    width: 40%;
 }
 .b3 .overlay{
     justify-content: center;
@@ -157,7 +223,13 @@ html,body{
     }
 }
 
-
+.footer{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media(max-width:500px){
     .text{
