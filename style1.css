@@ -214,6 +214,9 @@ html,body{
 }
 
 @media(max-width:700px){
+    .mag{
+        background-color: transparent;
+    }
     .rtext{
         flex-direction: column;
     }
@@ -232,6 +235,9 @@ html,body{
 }
 
 @media(max-width:500px){
+    .mag{
+        background-color: transparent;
+    }
     .text{
         flex-direction: column;
         align-items: flex-start;
